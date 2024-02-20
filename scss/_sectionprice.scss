@@ -1,0 +1,211 @@
+.buttom__text-price {
+  color: rgb(27, 28, 33);
+  font-family: "TT Lakes";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.get__commercial-offer {
+  position: relative;
+  padding-right: 20px;
+  color: rgb(27, 28, 33);
+  font-family: "TT Lakes";
+  font-size: 16px;
+  font-weight: 500;
+}
+.get__commercial-offer::after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid rgb(255, 62, 121);
+  border-right: 2px solid rgb(255, 62, 121);
+  background-color: transparent;
+  transform: rotate(45deg);
+}
+
+.text-price {
+  font-family: "TT Lakes";
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+@media (min-width: 320px) {
+  .swiper-slide--price {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  .swiper--price {
+    width: 280px;
+  }
+  .text__price-cart {
+    color: rgb(126, 126, 130);
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 auto;
+    padding-left: 16px;
+    margin-top: 16px;
+  }
+  .text__price {
+    width: 228px;
+    margin: 0;
+    padding-left: 16px;
+  }
+  .flex__button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .order {
+    background-color: rgb(255, 62, 121);
+    border-radius: 16px;
+    color: #fff;
+    width: 160px;
+    height: 32px;
+    font-family: "TT Lakes";
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .order::after {
+    content: "";
+    position: absolute;
+    top: 47%;
+    transform: translateY(-50%) rotate(45deg);
+    width: 8px;
+    left: 80px;
+    height: 8px;
+    border-right: 2px solid #fff;
+    border-top: 2px solid #fff;
+    box-sizing: border-box;
+  }
+  .buttom__text-price {
+    position: relative;
+    margin-left: 30px;
+  }
+  .footer__info {
+    height: 162px;
+    color: rgb(126, 126, 130);
+    font-family: "TT Lakes";
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .get__commercial {
+    width: 192px;
+    height: 54.98px;
+  }
+  .table__information-price {
+    display: none;
+  }
+  footer {
+    display: grid;
+  }
+}
+@media (min-width: 768px) {
+  div.swiper--price {
+    display: none;
+  }
+  .buttom__text-price {
+    width: 421px;
+    margin: 0;
+    padding-left: 16px;
+  }
+  .get__commercial {
+    width: 360px;
+    height: 23px;
+    padding-left: 16px;
+  }
+  .information {
+    border-collapse: collapse;
+    width: 100%;
+    height: 324px;
+    color: rgb(27, 28, 33);
+    font-family: "TT Lakes";
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  .btn__info-price {
+    background-color: rgb(255, 62, 121);
+    border-radius: 16px;
+    color: #fff;
+    width: 119px;
+    height: 32px;
+    font-family: "TT Lakes";
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    margin-right: 20px;
+  }
+  .btn__info-price::after {
+    content: "";
+    position: absolute;
+    top: 47%;
+    transform: translateY(-50%) rotate(45deg);
+    width: 8px;
+    left: 100px;
+    height: 8px;
+    border-right: 2px solid #fff;
+    border-top: 2px solid #fff;
+    box-sizing: border-box;
+  }
+  .block__column-price {
+    color: rgb(126, 126, 130);
+    font-family: "TT Lakes";
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.72;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  .block__info-price {
+    border-bottom: solid rgb(216, 216, 216) 1px;
+    border-radius: 6px;
+    background: rgb(255, 255, 255);
+  }
+  th,
+  td {
+    padding: 16px;
+  }
+
+  .table__information-price {
+    display: flex;
+  }
+  .footer__info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .w {
+    text-align: left;
+    width: 218px;
+  }
+  .j {
+    width: 213px;
+    height: 48px;
+    text-align: right;
+  }
+  footer {
+    display: flex;
+  }
+}
+
+@media (min-width: 1440px) {
+  div.swiper--price {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
+}

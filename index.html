@@ -4,9 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CPS</title>
-    <link rel="stylesheet" href="css/slider.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/mobilesyle.css" />
+    <link rel="stylesheet" href="scss/main.css" />
     <link rel="stylesheet" href="fonts/TTLakes/stylesheet.css" />
     <link
       rel="stylesheet"
@@ -19,7 +17,7 @@
         <ul class="menu__list">
           <li>
             <a href="#" class="menu__link-nav">
-              <img class="logo-img" src="./imgs/burger.svg" alt="Меню" />
+              <img class="menu-img" src="./imgs/burger.svg" alt="Меню" />
             </a>
           </li>
           <li>
@@ -61,478 +59,777 @@
         </div>
       </nav>
     </header>
-    <section class="burger__menu">
-      <nav class="menu__burger--nav">
-        <ul class="menu__list--burger">
-          <div class="dd">
-            <div class="menu__list-cps--mobile">
-              <li>
-                <a href="#" class="menu__link-nav">
-                  <img class="menu-img" src="imgs/burger.svg" alt="Меню" />
-                </a>
-              </li>
+    <div id="block__form" class="open">
+      <form>
+        <button class="close__btn">
+          <img class="close-img" src="imgs/ic_close.svg" alt="Закрыть" />
+        </button>
+        <p class="text__form">Обратная связь</p>
+        <input type="text" name="name" placeholder="Имя" />
+        <input type="text" name="telephone" placeholder="Телефон" />
+        <input type="text" name="mail" placeholder="Электронная почта" />
+        <input type="text" name="messege" placeholder="Сообщение" />
+        <p class="informatioin__text-form">
+          Нажимая “отправить”, вы даете согласие на
+          <span class="txt">обработку персональных данных</span> и соглашаетесь
+          с нашей <span class="txt">политикой конфиденциальности</span>
+        </p>
+        <button class="click__form">Отправить</button>
+      </form>
+    </div>
+    <div id="block__form-call" class="open--call">
+      <form>
+        <button class="close__btn">
+          <img class="call__close-img" src="imgs/ic_close.svg" alt="Закрыть" />
+        </button>
+        <p class="text__form">Заказать звонок</p>
+        <input type="text" name="telephone" placeholder="Телефон" />
+        <p class="informatioin__text-form">
+          Нажимая “отправить”, вы даете согласие на
+          <span class="txt">обработку персональных данных</span> и соглашаетесь
+          с нашей <span class="txt">политикой конфиденциальности</span>
+        </p>
+        <button class="click__form">Отправить</button>
+      </form>
+    </div>
+    <main class="main">
+      <div class="burger__menu">
+        <nav class="menu__burger-nav">
+          <ul class="menu__list-burger">
+            <li class="invise__btn">
+              <a href="#" class="menu__link-nav">
+                <img
+                  class="menu-close"
+                  src="./imgs/ic_close.svg"
+                  alt="Закрыть"
+                />
+              </a>
+            </li>
+            <li>
               <a href="#" class="logo__burger">
                 <img
-                  class="logo-img--burger"
+                  class="logo__img-burger"
                   src="imgs/Logo.svg"
                   alt="Логотип"
                 />
               </a>
-            </div>
-            <div class="menu__item-cart">
-              <li>
-                <a href="#" class="menu__link">
-                  <img class="logo-img" src="imgs/search.svg" alt="Поиск" />
-                </a>
-              </li>
-            </div>
-          </div>
-        </ul>
-      </nav>
-      <section class="info">
-        <div class="container">
-          <div class="repair">
-            <ul class="repair__menu-list">
-              <div class="repair__menu-list--cps">
-                <div class="repair-active_blow">
-                  <img
-                    class="img-stick-active"
-                    src="imgs/highlight.svg"
-                    alt=""
-                  />
-                </div>
-                <div class="repair__div">
-                  <a href="#" class="repair__menu-ink-nav">
-                    <li class="repair__menu-ist--item repair--active">
-                      Ремонт техники
-                    </li>
-                  </a>
-                  <a href="#" class="repair__menu-ink-nav">
-                    <li class="repair__menu-ist--item">Услуги и сервисы</li>
-                  </a>
-                  <a href="#" class="repair__menu-ink-nav">
-                    <li class="repair__menu-ist--item">
-                      Корпоративным клиентам
-                    </li>
-                  </a>
-                  <a href="#" class="repair__menu-ink-nav">
-                    <li class="repair__menu-ist--item">Продавцам техники</li>
-                  </a>
-                  <a href="#" class="repair__menu-ink-nav">
-                    <li class="repair__menu-ist--item">Партнерам</li>
-                  </a>
-                  <a href="#" class="repair__menu-ink-nav">
-                    <li class="repair__menu-ist--item">Производителям</li>
-                  </a>
-                  <a href="#" class="repair__menu-ink-nav">
-                    <li class="repair__menu-ist--item">
-                      Наши сервисные центры
-                    </li>
-                  </a>
-                  <a href="#" class="repair__menu-ink-nav">
-                    <li class="repair__menu-ist--item">Контакты</li>
-                  </a>
-                </div>
-              </div>
-            </ul>
-          </div>
+            </li>
 
-          <div class="informatiounOfUser">
-            <a href="#" class="informatiounOfUser__menu-link">
-              <img class="logo-img" src="imgs/call.svg" alt="Позвонить" />
-            </a>
-            <a href="#" class="informatiounOfUser__menu-link">
-              <img class="logo-img" src="imgs/chat.svg" alt="Написать" />
-            </a>
-            <a href="#" class="informatiounOfUser__menu-link">
-              <img class="logo-img" src="imgs/profile.svg" alt="Чат"
-            /></a>
-          </div>
-          <div class="gmail">
-            <a href="#" class="gmail__text">mail@cps.com</a>
-          </div>
-
-          <div class="phone">
-            <a href="tel:88008908900" class="phone__num">8 800 890 8900</a>
-          </div>
-          <div class="languges">
-            <a href="#" class="languges__href active__class">RU</a>
-            <a href="#" class="languges__href">EU</a>
-            <a href="#" class="languges__href">CH</a>
-          </div>
+            <li class="menu__item-cart">
+              <a href="#" class="menu__link">
+                <img class="logo__img" src="./imgs/search.svg" alt="Поиск" />
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="repair">
+          <ul class="repair__div">
+            <li class="repair__menu-ist-item">
+              <a href="#" class="repair__link-nav"> Ремонт техники </a>
+            </li>
+            <li class="repair__menu-ist-item">
+              <a href="#" class="repair__link-nav repair--active">
+                Услуги и сервисы
+              </a>
+            </li>
+            <li class="repair__menu-ist-item">
+              <a href="#" class="repair__link-nav"> Корпоративным клиентам </a>
+            </li>
+            <li class="repair__menu-ist-item">
+              <a href="#" class="repair__link-nav"> Продавцам техники </a>
+            </li>
+            <li class="repair__menu-ist-item">
+              <a href="#" class="repair__link-nav"> Партнерам </a>
+            </li>
+            <li class="repair__menu-ist-item">
+              <a href="#" class="repair__link-nav"> Производителям </a>
+            </li>
+            <li class="repair__menu-ist-item">
+              <a href="#" class="repair__link-nav"> Наши сервисные центры </a>
+            </li>
+            <li class="repair__menu-ist-item">
+              <a href="#" class="repair__link-nav"> Контакты </a>
+            </li>
+          </ul>
         </div>
-      </section>
-    </section>
-    <main class="main">
-      <section class="info">
-        <div class="container">
-          <div class="services">
-            <div class="services__content">
-              <img class="img-stick-active" src="./imgs/highlight.svg" alt="" />
+        <div class="informatiounOfUser">
+          <a href="#" class="informatiounOfUser__menu-link">
+            <img class="call__img" src="imgs/call.svg" alt="Позвонить" />
+          </a>
+          <a href="#" class="informatiounOfUser__menu-link">
+            <img class="say_img" src="imgs/chat.svg" alt="Написать" />
+          </a>
+          <a href="#" class="informatiounOfUser__menu-link">
+            <img class="logo__img" src="imgs/profile.svg" alt="Чат"
+          /></a>
+        </div>
+        <div class="gmail">
+          <a href="#" class="gmail__text">mail@cps.com</a>
+        </div>
+
+        <div class="phone">
+          <a href="tel:88008908900" class="phone__num">8 800 890 8900</a>
+        </div>
+        <div class="languges">
+          <a href="#" class="languges__href active--class">RU</a>
+          <a href="#" class="languges__href">EU</a>
+          <a href="#" class="languges__href">CH</a>
+        </div>
+      </div>
+      <section class="content">
+        <section class="info">
+          <div class="container">
+            <div class="services">
               <h1 class="services__content-text">Услуги и сервисы</h1>
-            </div>
-            <div class="services__content-uslugi">
-              <a href="#" class="zayavka"
-                >Оставить заявку
-                <img class="logo-img-r" src="./imgs/repair.svg" alt="Заявка" />
-              </a>
-              <a href="#" class="zayavka"
-                >Статус ремонта
-                <img
-                  class="logo-img-r"
-                  src="./imgs/checkstatus.svg"
-                  alt="Ремонт"
-                />
-              </a>
-            </div>
-          </div>
-          <div class="blov_input">
-            <nav class="block_services">
-              <button class="btn btn__active">
-                <a
-                  href="#"
-                  class="additional_services additional_services__mobile service--active"
-                  >Ремонтируемые устройства</a
-                >
-              </button>
-              <button class="btn">
-                <a href="#" class="additional_services"
-                  >Дополнительные услуги</a
-                >
-              </button>
-              <button class="btn">
-                <a href="#" class="additional_services">Цены на услуги</a>
-              </button>
-              <button class="btn">
-                <a href="#" class="additional_services additional_services-rem"
-                  >Адреса сервисных центров</a
-                >
-              </button>
-              <button class="btn">
-                <a href="#" class="additional_services">Специальные цены</a>
-              </button>
-            </nav>
-          </div>
-          <p class="reviews-text">Отзывы</p>
-          <div class="block_flex">
-            <article class="article">
-              <h4 class="text-info">
-                Мы являемся авторизованным сервисным центром по ремонту техники
-                Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
-                официальной гарантией производителя.
-              </h4>
-              <h4 class="text-info-work">
-                Мы успешно работаем с 1992 года и заслужили репутацию надежного
-                партнера,
-                <span class="text-info-work-continum"
-                  >что подтверждает большое количество постоянных клиентов. Мы
-                  гордимся тем, что к нам обращаются по рекомендациям и, в свою
-                  очередь, советуют нас родным и близким.</span
-                >
-              </h4>
-              <div class="read">
-                <a href="#" class="read__more">
-                  <img class="expand-img" src="./imgs/expand.svg" alt="" />
+              <div class="services__content-uslugi">
+                <a href="#" class="zayavka"
+                  >Оставить заявку
+                  <img
+                    class="logo-img-r"
+                    src="./imgs/repair.svg"
+                    alt="Заявка"
+                  />
                 </a>
-                <button class="read__next">Читать далее</button>
-              </div>
-            </article>
-            <div class="read__arrows">
-              <img class="photo-gps-img" src="../imgs/_MG_3223.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="slider">
-        <div class="container">
-          <h2 class="slider__text">Ремонт техники различных брендов</h2>
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="swiper__slider-img">
+                <a href="#" class="zayavka"
+                  >Статус ремонта
                   <img
-                    class="lenovo__img"
-                    src="imgs/ico_name_firms/lenovo.svg"
-                    alt=""
+                    class="logo-img-r"
+                    src="./imgs/checkstatus.svg"
+                    alt="Ремонт"
                   />
-                  <img
-                    class="check"
-                    src="imgs/ico_name_firms/ic_go.svg"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper__slider-img">
-                  <img
-                    class="samsung__img"
-                    src="imgs/ico_name_firms/Bitmap.svg"
-                    alt="Поиск"
-                  />
-                  <img
-                    class="check"
-                    src="imgs/ico_name_firms/ic_go.svg"
-                    alt="Поиск"
-                  />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper__slider-img">
-                  <img
-                    class="apple__img"
-                    src="imgs/ico_name_firms/apple.svg"
-                    alt="Поиск"
-                  />
-                  <img
-                    class="check"
-                    src="imgs/ico_name_firms/ic_go.svg"
-                    alt="Поиск"
-                  />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper__slider-img">
-                  <img
-                    class="bosh__img"
-                    src="imgs/ico_name_firms/bosh.svg"
-                    alt="Поиск"
-                  />
-                  <img
-                    class="check"
-                    src="imgs/ico_name_firms/ic_go.svg"
-                    alt="Поиск"
-                  />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper__slider-img">
-                  <img
-                    class="hp__img"
-                    src="imgs/ico_name_firms/hp.svg"
-                    alt="Поиск"
-                  />
-                  <img
-                    class="check"
-                    src="imgs/ico_name_firms/ic_go.svg"
-                    alt="Поиск"
-                  />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper__slider-img">
-                  <img
-                    class="acer__img"
-                    src="imgs/ico_name_firms/acer.svg"
-                    alt="Поиск"
-                  />
-                  <img
-                    class="check"
-                    src="imgs/ico_name_firms/ic_go.svg"
-                    alt="Поиск"
-                  />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper__slider-img">
-                  <img
-                    class="acer__img"
-                    src="imgs/ico_name_firms/acer.svg"
-                    alt="Поиск"
-                  />
-                  <img
-                    class="check"
-                    src="imgs/ico_name_firms/ic_go.svg"
-                    alt="Поиск"
-                  />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper__slider-img">
-                  <img
-                    class="acer__img"
-                    src="imgs/ico_name_firms/lenovo.svg"
-                    alt="Поиск"
-                  />
-                  <img
-                    class="check"
-                    src="imgs/ico_name_firms/ic_go.svg"
-                    alt="Поиск"
-                  />
-                </div>
+                </a>
               </div>
             </div>
-            <div class="swiper-pagination"></div>
+            <div class="block__input">
+              <button class="btn btn--active">Ремонтируемые устройства</button>
+              <button class="btn">Дополнительные услуги</button>
+              <button class="btn">Цены на услуги</button>
+              <button class="btn additional_services-rem">
+                Адреса сервисных центров
+              </button>
+              <button class="btn">Специальные цены</button>
+            </div>
+            <p class="reviews__text">Отзывы</p>
+            <div class="block__flex">
+              <article class="article">
+                <h4 class="text__info">
+                  Мы являемся авторизованным сервисным центром по ремонту
+                  техники Dell. Только у нас вы можете отремонтировать свой
+                  ноутбук Dell с официальной гарантией производителя.
+                </h4>
+                <h4 class="text-info-work">
+                  Мы успешно работаем с 1992 года и заслужили репутацию
+                  надежного партнера,
+                  <span class="text__info-continum"
+                    >что подтверждает большое количество постоянных клиентов. Мы
+                    гордимся тем, что к нам обращаются по рекомендациям и, в
+                    свою очередь, советуют нас родным и близким.</span
+                  >
+                </h4>
+                <div class="read">
+                  <a href="#" class="read__more">
+                    <img class="expand-img" src="./imgs/expand.svg" alt="" />
+                  </a>
+                  <button class="read__next">Читать далее</button>
+                </div>
+              </article>
+              <div class="read__">
+                <img class="photo__gps-img" src="./imgs/_MG_3223.png" alt="" />
+              </div>
+            </div>
           </div>
-          <div class="slide__flex">
-            <div class="slide__flex-wrapper">
-              <div class="slide__flex-position">
-                <div class="slide__flex-img">
-                  <img
-                    class="lenovo__img"
-                    src="imgs/ico_name_firms/lenovo.svg"
-                    alt=""
-                  />
-                  <img
-                    class="check"
-                    src="imgs/ico_name_firms/ic_go.svg"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="slide__flex-position">
-                <div class="slide__flex-img">
-                  <img
-                    class="samsung__img"
-                    src="imgs/ico_name_firms/Bitmap.svg"
-                    alt="Поиск"
-                  />
-                  <img
-                    class="check"
-                    src="imgs/ico_name_firms/ic_go.svg"
-                    alt="Поиск"
-                  />
-                </div>
-              </div>
-              <div class="slide__flex-position">
-                <div class="slide__flex-img">
-                  <img
-                    class="apple__img"
-                    src="imgs/ico_name_firms/apple.svg"
-                    alt="Поиск"
-                  />
-                  <img
-                    class="check"
-                    src="imgs/ico_name_firms/ic_go.svg"
-                    alt="Поиск"
-                  />
-                </div>
-              </div>
-              <div class="slide__flex-position">
-                <div class="slide__flex-img">
-                  <img
-                    class="bosh__img"
-                    src="imgs/ico_name_firms/bosh.svg"
-                    alt="Поиск"
-                  />
-                  <img
-                    class="check"
-                    src="imgs/ico_name_firms/ic_go.svg"
-                    alt="Поиск"
-                  />
-                </div>
-              </div>
-              <div class="slide__flex-position">
-                <div class="slide__flex-img">
-                  <img
-                    class="hp__img"
-                    src="imgs/ico_name_firms/hp.svg"
-                    alt="Поиск"
-                  />
-                  <img
-                    class="check"
-                    src="imgs/ico_name_firms/ic_go.svg"
-                    alt="Поиск"
-                  />
-                </div>
-              </div>
-              <div class="slide__flex-position">
-                <div class="slide__flex-img">
-                  <img
-                    class="acer__img"
-                    src="imgs/ico_name_firms/acer.svg"
-                    alt="Поиск"
-                  />
-                  <img
-                    class="check"
-                    src="imgs/ico_name_firms/ic_go.svg"
-                    alt="Поиск"
-                  />
-                </div>
-              </div>
-              <div class="slide__flex-position slide__inise--two">
-                <div class="slide__flex-img">
-                  <img
-                    class="acer__img"
-                    src="imgs/ico_name_firms/ViewSinic.svg"
-                    alt="Поиск"
-                  />
-                  <img
-                    class="check"
-                    src="imgs/ico_name_firms/ic_go.svg"
-                    alt="Поиск"
-                  />
-                </div>
-              </div>
-              <div class="slide__flex-position slide__inise--two">
-                <div class="slide__flex-img">
-                  <img
-                    class="acer__img"
-                    src="imgs/ico_name_firms/Sony.svg"
-                    alt="Поиск"
-                  />
-                  <img
-                    class="check"
-                    src="imgs/ico_name_firms/ic_go.svg"
-                    alt="Поиск"
-                  />
-                </div>
-              </div>
+        </section>
 
-              <div class="slide__flex-position slide--invase">
-                <div class="slide__flex-img">
-                  <img
-                    class="acer__img"
-                    src="imgs/ico_name_firms/lenovo.svg"
-                    alt="Поиск"
-                  />
-                  <img
-                    class="check"
-                    src="imgs/ico_name_firms/ic_go.svg"
-                    alt="Поиск"
-                  />
+        <section class="slider">
+          <div class="container">
+            <h2 class="slider__text">Ремонт техники различных брендов</h2>
+            <div class="swiper swiper--repair">
+              <div class="swiper-wrapper swiper-wrapper--repair">
+                <div class="swiper-slide swiper-slide--repair">
+                  <div class="swiper__slider-img">
+                    <img
+                      class="lenovo__img"
+                      src="./imgs/ico_name_firms/lenovo.svg"
+                      alt="Слайдер"
+                    />
+                    <img
+                      class="check"
+                      src="./imgs/ico_name_firms/ic_go.svg"
+                      alt="Слайдер"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide--repair">
+                  <div class="swiper__slider-img">
+                    <img
+                      class="samsung__img"
+                      src="./imgs/ico_name_firms/Bitmap.svg"
+                      alt="Слайдер"
+                    />
+                    <img
+                      class="check"
+                      src="./imgs/ico_name_firms/ic_go.svg"
+                      alt="Слайдер"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide--repair">
+                  <div class="swiper__slider-img">
+                    <img
+                      class="apple__img"
+                      src="./imgs/ico_name_firms/apple.svg"
+                      alt="Слайдер"
+                    />
+                    <img
+                      class="check"
+                      src="./imgs/ico_name_firms/ic_go.svg"
+                      alt="Слайдер"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide--repair">
+                  <div class="swiper__slider-img">
+                    <img
+                      class="bosh__img"
+                      src="./imgs/ico_name_firms/bosh.svg"
+                      alt="Слайдер"
+                    />
+                    <img
+                      class="check"
+                      src="./imgs/ico_name_firms/ic_go.svg"
+                      alt="Слайдер"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide--repair">
+                  <div class="swiper__slider-img">
+                    <img
+                      class="hp__img"
+                      src="./imgs/ico_name_firms/hp.svg"
+                      alt="Слайдер"
+                    />
+                    <img
+                      class="check"
+                      src="./imgs/ico_name_firms/ic_go.svg"
+                      alt="Слайдер"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide--repair">
+                  <div class="swiper__slider-img">
+                    <img
+                      class="acer__img"
+                      src="./imgs/ico_name_firms/acer.svg"
+                      alt="Слайдер"
+                    />
+                    <img
+                      class="check"
+                      src="./imgs/ico_name_firms/ic_go.svg"
+                      alt="Слайдер"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide--repair">
+                  <div class="swiper__slider-img">
+                    <img
+                      class="acer__img"
+                      src="./imgs/ico_name_firms/acer.svg"
+                      alt="Слайдер"
+                    />
+                    <img
+                      class="check"
+                      src="./imgs/ico_name_firms/ic_go.svg"
+                      alt="Слайдер"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide--repair">
+                  <div class="swiper__slider-img">
+                    <img
+                      class="acer__img"
+                      src="./imgs/ico_name_firms/lenovo.svg"
+                      alt="Слайдер"
+                    />
+                    <img
+                      class="check"
+                      src="./imgs/ico_name_firms/ic_go.svg"
+                      alt="Слайдер"
+                    />
+                  </div>
                 </div>
               </div>
-              <div class="slide__flex-position slide--invase">
-                <div class="slide__flex-img">
-                  <img
-                    class="acer__img"
-                    src="imgs/ico_name_firms/bosh.svg"
-                    alt="Поиск"
-                  />
-                  <img
-                    class="check"
-                    src="imgs/ico_name_firms/ic_go.svg"
-                    alt="Поиск"
-                  />
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="slide__flex">
+              <div class="slide__flex-wrapper">
+                <div class="slide__flex-position">
+                  <div class="slide__flex-img">
+                    <img
+                      class="lenovo__img"
+                      src="./imgs/ico_name_firms/lenovo.svg"
+                      alt="Слайдер"
+                    />
+                    <img
+                      class="check"
+                      src="./imgs/ico_name_firms/ic_go.svg"
+                      alt="Слайдер"
+                    />
+                  </div>
                 </div>
-              </div>
-              <div class="slide__flex-position slide--invase">
-                <div class="slide__flex-img">
-                  <img
-                    class="acer__img"
-                    src="imgs/ico_name_firms/apple.svg "
-                    alt="Поиск"
-                  />
-                  <img
-                    class="check"
-                    src="imgs/ico_name_firms/ic_go.svg"
-                    alt="Поиск"
-                  />
+                <div class="slide__flex-position">
+                  <div class="slide__flex-img">
+                    <img
+                      class="samsung__img"
+                      src="./imgs/ico_name_firms/Bitmap.svg"
+                      alt="Слайдер"
+                    />
+                    <img
+                      class="check"
+                      src="./imgs/ico_name_firms/ic_go.svg"
+                      alt="Слайдер"
+                    />
+                  </div>
+                </div>
+                <div class="slide__flex-position">
+                  <div class="slide__flex-img">
+                    <img
+                      class="apple__img"
+                      src="./imgs/ico_name_firms/apple.svg"
+                      alt="Слайдер"
+                    />
+                    <img
+                      class="check"
+                      src="./imgs/ico_name_firms/ic_go.svg"
+                      alt="Слайдер"
+                    />
+                  </div>
+                </div>
+                <div class="slide__flex-position">
+                  <div class="slide__flex-img">
+                    <img
+                      class="bosh__img"
+                      src="./imgs/ico_name_firms/bosh.svg"
+                      alt="Слайдер"
+                    />
+                    <img
+                      class="check"
+                      src="./imgs/ico_name_firms/ic_go.svg"
+                      alt="Слайдер"
+                    />
+                  </div>
+                </div>
+                <div class="slide__flex-position">
+                  <div class="slide__flex-img">
+                    <img
+                      class="hp__img"
+                      src="./imgs/ico_name_firms/hp.svg"
+                      alt="Слайдер"
+                    />
+                    <img
+                      class="check"
+                      src="./imgs/ico_name_firms/ic_go.svg"
+                      alt="Слайдер"
+                    />
+                  </div>
+                </div>
+                <div class="slide__flex-position">
+                  <div class="slide__flex-img">
+                    <img
+                      class="acer__img"
+                      src="./imgs/ico_name_firms/acer.svg"
+                      alt="Слайдер"
+                    />
+                    <img
+                      class="check"
+                      src="./imgs/ico_name_firms/ic_go.svg"
+                      alt="Слайдер"
+                    />
+                  </div>
+                </div>
+                <div class="slide__flex-position slide__inise--two">
+                  <div class="slide__flex-img">
+                    <img
+                      class="acer__img"
+                      src="./imgs/ico_name_firms/ViewSinic.svg"
+                      alt="Слайдер"
+                    />
+                    <img
+                      class="check"
+                      src="./imgs/ico_name_firms/ic_go.svg"
+                      alt="Слайдер"
+                    />
+                  </div>
+                </div>
+                <div class="slide__flex-position slide__inise--two">
+                  <div class="slide__flex-img">
+                    <img
+                      class="acer__img"
+                      src="./imgs/ico_name_firms/Sony.svg"
+                      alt="Слайдер"
+                    />
+                    <img
+                      class="check"
+                      src="./imgs/ico_name_firms/ic_go.svg"
+                      alt="Слайдер"
+                    />
+                  </div>
+                </div>
+
+                <div class="slide__flex-position slide--invase">
+                  <div class="slide__flex-img">
+                    <img
+                      class="acer__img"
+                      src="./imgs/ico_name_firms/lenovo.svg"
+                      alt="Слайдер"
+                    />
+                    <img
+                      class="check"
+                      src="./imgs/ico_name_firms/ic_go.svg"
+                      alt="Слайдер"
+                    />
+                  </div>
+                </div>
+                <div class="slide__flex-position slide--invase">
+                  <div class="slide__flex-img">
+                    <img
+                      class="acer__img"
+                      src="./imgs/ico_name_firms/bosh.svg"
+                      alt="Слайдер"
+                    />
+                    <img
+                      class="check"
+                      src="./imgs/ico_name_firms/ic_go.svg"
+                      alt="Слайдер"
+                    />
+                  </div>
+                </div>
+                <div class="slide__flex-position slide--invase">
+                  <div class="slide__flex-img">
+                    <img
+                      class="acer__img"
+                      src="./imgs/ico_name_firms/apple.svg "
+                      alt="Слайдер"
+                    />
+                    <img
+                      class="check"
+                      src="./imgs/ico_name_firms/ic_go.svg"
+                      alt="Слайдер"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
+            <div class="check__shop">
+              <a href="#" class="read__more">
+                <img class="expands-img" src="./imgs/expand.svg" alt="Фото" />
+              </a>
+              <button class="view__all">Посмотреть все</button>
+            </div>
           </div>
-          <div class="check__shop">
-            <a href="#" class="read__more">
-              <img class="expand-img" src="./imgs/expand.svg" alt="" />
-            </a>
-            <button class="view_all">Посмотреть все</button>
+        </section>
+        <section class="slider__laptop">
+          <div class="container">
+            <h2 class="slider__text">Ремонт различных видов техники</h2>
+            <div class="swiper swiper--laptop">
+              <div class="swiper-wrapper swiper-wrapper--laptop">
+                <div class="swiper-slide swiper-slide--laptop">
+                  <h3 class="text__laptop-cart">Ремонт ноутбуков</h3>
+                  <a href="#"
+                    ><img
+                      class="check__cart"
+                      src="./imgs/ico_name_firms/ic_go.svg"
+                      width="40"
+                      alt="Поиск"
+                  /></a>
+                </div>
+                <div class="swiper-slide swiper-slide__laptop">
+                  <h3 class="text__laptop-cart">Ремонт планшетов</h3>
+                  <a href="#"
+                    ><img
+                      class="check__cart"
+                      src="./imgs/ico_name_firms/ic_go.svg"
+                      width="40"
+                      alt="Поиск"
+                  /></a>
+                </div>
+                <div class="swiper-slide swiper-slide__laptop">
+                  <h3 class="text__laptop-cart">Ремонт ПК</h3>
+                  <a href="#"
+                    ><img
+                      class="check__cart"
+                      src="./imgs/ico_name_firms/ic_go.svg"
+                      width="40"
+                      alt="Поиск"
+                  /></a>
+                </div>
+                <div class="swiper-slide swiper-slide__laptop">
+                  <h3 class="text__laptop-cart">Ремонт мониторов</h3>
+                  <a href="#"
+                    ><img
+                      class="check__cart"
+                      src="./imgs/ico_name_firms/ic_go.svg"
+                      width="40"
+                      alt="Поиск"
+                  /></a>
+                </div>
+                <div class="swiper-slide swiper-slide__laptop">
+                  <h3 class="text__laptop-cart">Ремонт ноутбуков</h3>
+                  <a href="#"
+                    ><img
+                      class="check__cart"
+                      src="./imgs/ico_name_firms/ic_go.svg"
+                      width="40"
+                      alt="Поиск"
+                  /></a>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="flex__laptop">
+              <div class="block__laptop">
+                <h3 class="text__laptop-flex">Ремонт ноутбуков</h3>
+                <a href="#"
+                  ><img
+                    class="check__cart-info"
+                    src="./imgs/ico_name_firms/ic_go.svg"
+                    width="40"
+                    alt="Поиск"
+                /></a>
+              </div>
+              <div class="block__laptop">
+                <h3 class="text__laptop-flex">Ремонт планшетов</h3>
+                <a href="#"
+                  ><img
+                    class="check__cart-info"
+                    src="./imgs/ico_name_firms/ic_go.svg"
+                    width="40"
+                    alt="Поиск"
+                /></a>
+              </div>
+              <div class="block__laptop">
+                <h3 class="text__laptop-flex">Ремонт ПК</h3>
+                <a href="#"
+                  ><img
+                    class="check__cart-info"
+                    src="./imgs/ico_name_firms/ic_go.svg"
+                    width="40"
+                    alt="Поиск"
+                /></a>
+              </div>
+              <div class="block__laptop laptop--invases">
+                <h3 class="text__laptop-flex">Ремонт мониторов</h3>
+                <a href="#"
+                  ><img
+                    class="check__cart-info"
+                    src="./imgs/ico_name_firms/ic_go.svg"
+                    width="40"
+                    alt="Поиск"
+                /></a>
+              </div>
+              <div class="block__laptop laptop--invase">
+                <h3 class="text__laptop-flex">Ремонт мониторов</h3>
+                <a href="#"
+                  ><img
+                    class="check__cart-info"
+                    src="./imgs/ico_name_firms/ic_go.svg"
+                    width="40"
+                    alt="Поиск"
+                /></a>
+              </div>
+              <div class="block__laptop laptop--invase">
+                <h3 class="text__laptop-flex">Ремонт мониторов</h3>
+                <a href="#"
+                  ><img
+                    class="check__cart-info"
+                    src="./imgs/ico_name_firms/ic_go.svg"
+                    width="40"
+                    alt="Поиск"
+                /></a>
+              </div>
+              <div class="block__laptop laptop--invase">
+                <h3 class="text__laptop-flex">Ремонт мониторов</h3>
+                <a href="#"
+                  ><img
+                    class="check__cart-info"
+                    src="./imgs/ico_name_firms/ic_go.svg"
+                    width="40"
+                    alt="Поиск"
+                /></a>
+              </div>
+              <div class="block__laptop laptop--invase">
+                <h3 class="text__laptop-flex">Ремонт мониторов</h3>
+                <a href="#"
+                  ><img
+                    class="check__cart-info"
+                    src="./imgs/ico_name_firms/ic_go.svg"
+                    width="40"
+                    alt="Поиск"
+                /></a>
+              </div>
+            </div>
+            <div class="check__shop">
+              <a href="#" class="read__more">
+                <img class="expand-img" src="./imgs/expand.svg" alt="" />
+              </a>
+              <button class="view__all-check">Посмотреть все</button>
+            </div>
+          </div>
+        </section>
+        <section class="price">
+          <div class="container">
+            <h2 class="slider__text">Цены на услуги</h2>
+            <div class="swiper swiper--price">
+              <div class="swiper-wrapper swiper-wrapper--price">
+                <div class="swiper-slide swiper-slide--price">
+                  <h5 class="text__price-cart">Ремонтые услуги</h5>
+                  <p class="text__price">
+                    Тестирование с выдачей технического заключения
+                  </p>
+                  <h5 class="text__price-cart">Цена</h5>
+                  <p class="text__price">Бесплатно</p>
+                  <h5 class="text__price-cart">Срок</h5>
+                  <div class="flex__button">
+                    <p class="text__price">30-120 мин</p>
+                    <button class="order">Заказать</button>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide--price">
+                  <h5 class="text__price-cart">Ремонтые услуги</h5>
+                  <p class="text__price">
+                    Тестирование с выдачей технического заключения
+                  </p>
+                  <h5 class="text__price-cart">Цена</h5>
+                  <p class="text__price">Бесплатно</p>
+                  <h5 class="text__price-cart">Срок</h5>
+                  <div class="flex__button">
+                    <p class="text__price">30-120 мин</p>
+                    <button class="order">Заказать</button>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide--price">
+                  <h5 class="text__price-cart">Ремонтые услуги</h5>
+                  <p class="text__price">
+                    Тестирование с выдачей технического заключения
+                  </p>
+                  <h5 class="text__price-cart">Цена</h5>
+                  <p class="text__price">Бесплатно</p>
+                  <h5 class="text__price-cart">Срок</h5>
+                  <div class="flex__button">
+                    <p class="text__price">30-120 мин</p>
+                    <button class="order">Заказать</button>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide--price">
+                  <h5 class="text__price-cart">Ремонтые услуги</h5>
+                  <p class="text__price">
+                    Тестирование с выдачей технического заключения
+                  </p>
+                  <h5 class="text__price-cart">Цена</h5>
+                  <p class="text__price">Бесплатно</p>
+                  <h5 class="text__price-cart">Срок</h5>
+                  <div class="flex__button">
+                    <p class="text__price">30-120 мин</p>
+                    <button class="order">Заказать</button>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide--price">
+                  <h5 class="text__price-cart">Ремонтые услуги</h5>
+                  <p class="text__price">
+                    Тестирование с выдачей технического заключения
+                  </p>
+                  <h5 class="text__price-cart">Цена</h5>
+                  <p class="text__price">Бесплатно</p>
+                  <h5 class="text__price-cart">Срок</h5>
+                  <div class="flex__button">
+                    <p class="text__price">30-120 мин</p>
+                    <button class="order">Заказать</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="table__information-price">
+              <table class="information">
+                <thead>
+                  <tr class="block__column-price">
+                    <th>Ремонтные услуги</th>
+                    <th>Цена</th>
+                    <th>Срок</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="block__info-price">
+                    <td>Диагностика</td>
+                    <td>Бесплатно</td>
+                    <td>30 минут</td>
+                    <td><button class="btn__info-price">Заказать</button></td>
+                  </tr>
+                  <tr class="block__info-price">
+                    <td>Замена дисплея</td>
+                    <td>1 000 ₽</td>
+                    <td>30-120 мин</td>
+                    <td><button class="btn__info-price">Заказать</button></td>
+                  </tr>
+                  <tr class="block__info-price">
+                    <td>Замена полифонического динамика</td>
+                    <td>1 000 ₽</td>
+                    <td>30-120 мин</td>
+                    <td><button class="btn__info-price">Заказать</button></td>
+                  </tr>
+                  <tr class="block__info-price">
+                    <td>Тестирование с выдачей технического заключения</td>
+                    <td>1 000 ₽</td>
+                    <td>30-120 мин</td>
+                    <td><button class="btn__info-price">Заказать</button></td>
+                  </tr>
+                  <tr class="block__info-price">
+                    <td>Замена программного обеспечения</td>
+                    <td>1 000 ₽</td>
+                    <td>30-120 мин</td>
+                    <td><button class="btn__info-price">Заказать</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="text-price">
+              <p class="buttom__text-price">
+                Все цены указаны с учетом НДС.Стоимость ремонта указана на
+                единичную услугу. Для получения коммерческого предложения на
+                постоянное обслуживание, оставьте заявку.
+              </p>
+            </div>
+            <div class="get__commercial">
+              <a href="#" class="get__commercial-offer"
+                >Получить коммерческое предложение</a
+              >
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer__info">
+          <div>
+            <p class="text__footer text--left">
+              © 2019 CPS <br />Разработано командой Apesong
+            </p>
+          </div>
+          <div class="y">
+            <p class="text__footer text--centre">Политика конфиденциальности</p>
+          </div>
+          <div class="j">
+            <p class="text__footer text--right">
+              Информация, размещенная на данной странице, не является публичной
+              офертой
+            </p>
           </div>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script src="script.js"></script>
-      </section>
-      <section class="slider__laptop"></section>
-    </main>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="src/index.js"></script>
   </body>
 </html>
