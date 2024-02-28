@@ -328,7 +328,14 @@ a {
   .services__content-uslugi {
     display: none;
   }
-
+  .repair--active::before {
+    content: "";
+    position: absolute;
+    margin-left: -20px;
+    width: 3.83px;
+    height: 28.31px;
+    background: rgb(65, 246, 215);
+  }
   .logo::before {
     display: none;
   }
@@ -459,14 +466,6 @@ a {
   }
   .logo::before {
     display: inline;
-  }
-  .repair--active::before {
-    content: "";
-    position: absolute;
-    margin-left: -38px;
-    width: 3.83px;
-    height: 28.31px;
-    background: rgb(65, 246, 215);
   }
   .repair--active::before {
     content: "";

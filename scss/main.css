@@ -258,6 +258,9 @@
     position: relative;
     z-index: 2;
   }
+  .block__input {
+    display: grid;
+  }
   .burger__menu {
     display: none;
   }
@@ -268,7 +271,11 @@
     background-color: #fff;
     z-index: 3;
     left: 0;
-    width: 320px;
+    width: 330px;
+    bottom: 0;
+    right: 0;
+    background: #fff;
+    height: 2000px;
   }
 }
 @media (min-width: 768px) {
@@ -279,7 +286,9 @@
   .show {
     position: absolute;
     display: inline;
-    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+    box-shadow:
+      16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+      -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
     background-color: #fff;
     left: 0;
     z-index: 3;
@@ -534,7 +543,11 @@ button {
   font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
-  background: linear-gradient(-270deg, rgb(248, 248, 248), rgb(255, 255, 255) 98.614%);
+  background: linear-gradient(
+    -270deg,
+    rgb(248, 248, 248),
+    rgb(255, 255, 255) 98.614%
+  );
   display: flex;
   align-items: center;
 }
@@ -1012,8 +1025,10 @@ a {
     position: relative;
     z-index: 15;
   }
-  .btn {
-    display: none;
+  .block__input {
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
   }
   .menu__list-action {
     display: none;
@@ -1053,7 +1068,9 @@ a {
     padding-left: 50px;
     max-width: 320px;
     height: 940px;
-    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+    box-shadow:
+      16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+      -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
     background: rgb(255, 255, 255);
     z-index: 2;
     background-color: #fff;
@@ -1073,9 +1090,9 @@ a {
     height: 40px;
     background: rgb(65, 246, 215);
   }
-  input[name=name],
-  input[name=telephone],
-  input[name=mail] {
+  input[name="name"],
+  input[name="telephone"],
+  input[name="mail"] {
     width: 288px;
     height: 48px;
     top: 96px;
@@ -1085,7 +1102,7 @@ a {
     background: rgb(255, 255, 255);
     margin-bottom: 20px;
   }
-  input[name=messege] {
+  input[name="messege"] {
     width: 288px;
     height: 118px;
     top: 288px;
@@ -1118,6 +1135,14 @@ a {
     height: 32px;
     border-radius: 16px;
     background: rgb(255, 62, 121);
+  }
+  .repair--active::before {
+    content: "";
+    position: absolute;
+    margin-left: -20px;
+    width: 3.83px;
+    height: 28.31px;
+    background: rgb(65, 246, 215);
   }
 }
 @media (min-width: 768px) {
@@ -1163,7 +1188,7 @@ a {
   .repair--active::before {
     content: "";
     position: absolute;
-    margin-left: -38px;
+    margin-left: 20px;
     width: 3.83px;
     height: 28.31px;
     background: rgb(65, 246, 215);
@@ -1171,7 +1196,7 @@ a {
   .repair--active::before {
     content: "";
     position: absolute;
-    margin-left: -38px;
+    margin-left: -20px;
     width: 3.83px;
     height: 28.31px;
     background: rgb(65, 246, 215);
@@ -1193,7 +1218,9 @@ a {
     margin-left: auto;
     max-width: 440px;
     height: 940px;
-    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+    box-shadow:
+      16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+      -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
     background: rgb(255, 255, 255);
     z-index: 2;
     background-color: #fff;
@@ -1213,9 +1240,9 @@ a {
     height: 40px;
     background: rgb(65, 246, 215);
   }
-  input[name=name],
-  input[name=telephone],
-  input[name=mail] {
+  input[name="name"],
+  input[name="telephone"],
+  input[name="mail"] {
     width: 376px;
     height: 48px;
     left: 1032px;
@@ -1225,7 +1252,7 @@ a {
     background: rgb(255, 255, 255);
     margin-bottom: 20px;
   }
-  input[name=messege] {
+  input[name="messege"] {
     width: 376px;
     height: 118px;
     left: 1032px;
@@ -1329,7 +1356,7 @@ a {
   .repair--active::before {
     content: "";
     position: absolute;
-    margin-left: -38px;
+    margin-left: -20px;
     width: 3.83px;
     height: 28.31px;
     background: rgb(65, 246, 215);
@@ -1351,7 +1378,9 @@ a {
     margin-left: auto;
     max-width: 440px;
     height: 940px;
-    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+    box-shadow:
+      16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+      -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
     background: rgb(255, 255, 255);
     z-index: 2;
     background-color: #fff;
@@ -1371,9 +1400,9 @@ a {
     height: 40px;
     background: rgb(65, 246, 215);
   }
-  input[name=name],
-  input[name=telephone],
-  input[name=mail] {
+  input[name="name"],
+  input[name="telephone"],
+  input[name="mail"] {
     width: 376px;
     height: 48px;
     left: 1032px;
@@ -1383,7 +1412,7 @@ a {
     background: rgb(255, 255, 255);
     margin-bottom: 20px;
   }
-  input[name=messege] {
+  input[name="messege"] {
     width: 376px;
     height: 118px;
     left: 1032px;
@@ -1418,4 +1447,4 @@ a {
     border-radius: 16px;
     background: rgb(255, 62, 121);
   }
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */

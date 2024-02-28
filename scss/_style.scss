@@ -315,8 +315,12 @@ a {
     position: relative;
     z-index: 15;
   }
+  .block__input {
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+  }
   .btn {
-    display: none;
   }
   .menu__list-action {
     display: none;
@@ -427,6 +431,14 @@ a {
     border-radius: 16px;
     background: rgb(255, 62, 121);
   }
+  .repair--active::before {
+    content: "";
+    position: absolute;
+    margin-left: -20px;
+    width: 3.83px;
+    height: 28.31px;
+    background: rgb(65, 246, 215);
+  }
 }
 
 @media (min-width: 768px) {
@@ -472,7 +484,7 @@ a {
   .repair--active::before {
     content: "";
     position: absolute;
-    margin-left: -38px;
+    margin-left: 20px;
     width: 3.83px;
     height: 28.31px;
     background: rgb(65, 246, 215);
@@ -480,7 +492,7 @@ a {
   .repair--active::before {
     content: "";
     position: absolute;
-    margin-left: -38px;
+    margin-left: -20px;
     width: 3.83px;
     height: 28.31px;
     background: rgb(65, 246, 215);
@@ -643,7 +655,7 @@ a {
   .repair--active::before {
     content: "";
     position: absolute;
-    margin-left: -38px;
+    margin-left: -20px;
     width: 3.83px;
     height: 28.31px;
     background: rgb(65, 246, 215);

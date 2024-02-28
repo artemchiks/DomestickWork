@@ -139,6 +139,9 @@
     position: relative;
     z-index: 2;
   }
+  .block__input {
+    display: grid;
+  }
   .burger__menu {
     display: none;
   }
@@ -149,7 +152,11 @@
     background-color: #fff;
     z-index: 3;
     left: 0;
-    width: 320px;
+    width: 330px;
+    bottom: 0;
+    right: 0;
+    background: #fff;
+    height: 2000px;
   }
 }
 
